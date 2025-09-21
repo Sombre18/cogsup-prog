@@ -5,7 +5,7 @@ from expyriment import design, control, stimuli
 exp = design.Experiment(name = "Circle")
 
 # Initialize the experiment: Must be done before presenting any stimulus
-control.initialize(exp)
+control.initialize(exp) 
 
 # Create a fixation cross (color, size, and position will take on default values)
 fixation = stimuli.FixCross() # At this stage the fixation cross is not yet rendered
