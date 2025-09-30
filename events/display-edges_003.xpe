@@ -1,15 +1,18 @@
 #Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
-#date: Wed Sep 24 2025 17:27:12
-#sha1: abadd7
+#date: Tue Sep 30 2025 10:57:57
+#sha1: 40faa4
 #modules: 
 #display: size=(800, 600), window_mode=True, opengl=2
 #os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
 Time,Type,Event,Value,Detail,Detail2
-1892,design,log,
+1565,design,log,
 #design: #exp: display-edges
 #design: block_cnt,block_id,trial_cnt,trial_id
-1893,design,logged,
-1893,Experiment,started
-1895,Stimulus,presented,0
-1909,Stimulus,presented,1
-1909,Experiment,ended
+1565,design,logged,
+1565,Experiment,started
+1567,Stimulus,presented,0
+1569,Stimulus,presented,1
+1571,Stimulus,presented,2
+1596,Stimulus,presented,3
+3053,Keyboard,received,32,wait
+3053,Experiment,ended

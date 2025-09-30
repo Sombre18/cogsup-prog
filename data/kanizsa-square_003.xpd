@@ -1,11 +1,11 @@
 #Expyriment 1.0.0 (Python 3.13.7), .xpd-file, coding: cp1252
-#date: Wed Sep 24 2025 17:44:00
+#date: Tue Sep 30 2025 10:58:07
 #--EXPERIMENT INFO
-#e mainfile: display-edges.py
-#e sha1: a78d78
+#e mainfile: kanizsa-square.py
+#e sha1: 0ee979
 #e modules: 
-#e Experiment: display-edges
+#e Experiment: kanizsa-square
 #e no between subject factors
 #--SUBJECT INFO
-#s id: 13
+#s id: 3
 subject_id,
