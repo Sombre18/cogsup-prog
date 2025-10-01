@@ -1,0 +1,11 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Wed Oct 01 2025 17:32:08
+#sha1: 947c1a
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+868,Stimulus,presented,0
+869,stderr,received,'Traceback (most recent call last):'
+870,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\timing_puzzle.py", line 13, in <module>\n    draw(stims)\n    ^^^^'
+871,stderr,received,"NameError: name 'draw' is not defined"

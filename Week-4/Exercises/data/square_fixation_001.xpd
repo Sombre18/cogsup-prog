@@ -1,11 +1,11 @@
 #Expyriment 1.0.0 (Python 3.13.7), .xpd-file, coding: cp1252
-#date: Tue Sep 30 2025 10:57:57
+#date: Wed Oct 01 2025 17:57:41
 #--EXPERIMENT INFO
-#e mainfile: display-edges.py
-#e sha1: 40faa4
+#e mainfile: square_fixation.py
+#e sha1: e78dff
 #e modules: 
-#e Experiment: display-edges
+#e Experiment: Square
 #e no between subject factors
 #--SUBJECT INFO
-#s id: 3
+#s id: 1
 subject_id,

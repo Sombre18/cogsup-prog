@@ -1,0 +1,12 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Wed Oct 01 2025 17:05:45
+#sha1: e38d67
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1558,Stimulus,presented,0
+2570,Stimulus,presented,1
+3587,Stimulus,presented,2
+5587,Experiment,ended
+5605,Stimulus,presented,3

@@ -1,18 +1,16 @@
 #Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
-#date: Tue Sep 30 2025 10:57:27
-#sha1: fbd272
+#date: Wed Oct 01 2025 17:53:19
+#sha1: 96fe97
 #modules: 
 #display: size=(800, 600), window_mode=True, opengl=2
 #os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
 Time,Type,Event,Value,Detail,Detail2
-644,Stimulus,presented,0
-645,Stimulus,presented,1
-646,Stimulus,presented,2
-647,Stimulus,presented,3
-673,Stimulus,presented,4
-1648,design,log,
-#design: #exp: kanizsa-square
+1750,design,log,
+#design: #exp: Square
 #design: block_cnt,block_id,trial_cnt,trial_id
-1648,design,logged,
-1648,Experiment,started
-1648,Experiment,ended
+1750,design,logged,
+1750,Experiment,started
+1759,Stimulus,presented,0
+3275,Stimulus,presented,1
+5457,Keyboard,received,32,wait
+5457,Experiment,ended

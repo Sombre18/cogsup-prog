@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Wed Oct 01 2025 17:56:59
+#sha1: e548c2
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1297,design,log,
+#design: #exp: Square
+#design: block_cnt,block_id,trial_cnt,trial_id
+1297,design,logged,
+1297,Experiment,started
+1299,stderr,received,'Traceback (most recent call last):'
+1299,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\square_fixation.py", line 30, in <module>\n    draw()\n    ~~~~^^'
+1300,stderr,received,"TypeError: draw() missing 1 required positional argument: 'stims'"
