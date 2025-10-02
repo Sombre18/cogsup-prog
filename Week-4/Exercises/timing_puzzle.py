@@ -5,23 +5,32 @@ exp = design.Experiment(name="timing puzzle")
 control.set_develop_mode()
 control.initialize(exp)
 
-def load(stims):
-    for stim in stims:
-        stim.preload()
+def draw(stims):
+    stims[0].present(clear=True, update=False)
+    for stim in stims[1:-1]:
+        stim.present(clear=False, update=False)
+    stims[-1].present(clear=False, update=True)
 
+#draw([fixation, text])
 
 fixation = stimuli.FixCross()
 text = stimuli.TextLine("Fixation removed")
 
-
-fixation.present()
 t0 = exp.clock.time
-exp.clock.wait(1000)
+fixation.present()
+dt = exp.clock.time - t0
+exp.clock.wait(1000 - dt)
 
+t0 = exp.clock.time
 text.present()
+dt = exp.clock.time - t0
+exp.clock.wait(1000 - dt)
+
+
 t1 = exp.clock.time
 fix_duration = (t1 - t0)/1000
 
+exp.clock.wait(1000)
 
 units = "second" if fix_duration == 1.0 else "seconds"
 duration_text = f"Fixation was present on the screen for {fix_duration} {units}"
@@ -31,6 +40,3 @@ text2.present()
 exp.clock.wait(2000)
 
 control.end()
-
-
-
