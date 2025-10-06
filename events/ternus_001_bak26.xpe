@@ -1,0 +1,23 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Tue Oct 07 2025 01:05:27
+#sha1: fa3013
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+3054,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+3054,design,logged,
+3054,Experiment,started
+3074,Stimulus,presented,0
+3090,Stimulus,presented,2
+3573,Stimulus,presented,0
+3590,Stimulus,presented,2
+3604,Stimulus,presented,2
+3624,Stimulus,presented,6
+4105,Stimulus,presented,2
+4105,Stimulus,presented,4
+4123,Stimulus,presented,6
+13571,Keyboard,received,32,wait
+13571,Experiment,ended

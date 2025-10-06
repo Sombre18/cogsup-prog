@@ -1,0 +1,22 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Tue Oct 07 2025 00:04:45
+#sha1: d24119
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1462,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+1462,design,logged,
+1462,Experiment,started
+1462,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x00000140F4A88860>'
+1463,stderr,received,'Traceback (most recent call last):'
+1463,stderr,received,'  File "C:\\Users\\Claire\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\expyriment\\stimuli\\_visual.py", line 266, in __del__'
+1464,stderr,received,'    if self._compression_filename is not None:'
+1464,stderr,received,"AttributeError: 'Circle' object has no attribute '_compression_filename'"
+1465,stderr,received,'Traceback (most recent call last):'
+1466,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\ternus.py", line 45, in <module>\n    run_trial()\n    ~~~~~~~~~^^'
+1466,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\ternus.py", line 25, in run_trial\n    c = [make_circle(-200), make_circle(0), make_circle(200), make_circle(400)]\n         ~~~~~~~~~~~^^^^^^'
+1466,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\ternus.py", line 34, in make_circle\n    circle = stimuli.Circle(colour = "black")'
+1466,stderr,received,"TypeError: Circle.__init__() missing 1 required positional argument: 'radius'"

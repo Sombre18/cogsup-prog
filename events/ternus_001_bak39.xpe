@@ -1,0 +1,51 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Tue Oct 07 2025 01:27:04
+#sha1: 6b10aa
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1057,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+1057,design,logged,
+1057,Experiment,started
+1085,Stimulus,presented,0
+1086,Stimulus,presented,2
+1103,Stimulus,presented,4
+1585,Stimulus,presented,0
+1585,Stimulus,presented,2
+1602,Stimulus,presented,4
+1819,Stimulus,presented,2
+1819,Stimulus,presented,4
+1835,Stimulus,presented,6
+2319,Stimulus,presented,2
+2319,Stimulus,presented,4
+2335,Stimulus,presented,6
+2553,Stimulus,presented,0
+2553,Stimulus,presented,2
+2567,Stimulus,presented,4
+3052,Stimulus,presented,0
+3052,Stimulus,presented,2
+3069,Stimulus,presented,4
+3284,Stimulus,presented,2
+3284,Stimulus,presented,4
+3302,Stimulus,presented,6
+3784,Stimulus,presented,2
+3785,Stimulus,presented,4
+3803,Stimulus,presented,6
+4018,Stimulus,presented,0
+4019,Stimulus,presented,2
+4036,Stimulus,presented,4
+4518,Stimulus,presented,0
+4518,Stimulus,presented,2
+4534,Stimulus,presented,4
+4753,Stimulus,presented,2
+4753,Stimulus,presented,4
+4769,Stimulus,presented,6
+5252,Stimulus,presented,2
+5252,Stimulus,presented,4
+5269,Stimulus,presented,6
+5486,Keyboard,received,32,check
+5814,Keyboard,received,32,wait
+5814,Experiment,ended

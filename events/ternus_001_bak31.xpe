@@ -1,0 +1,75 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Tue Oct 07 2025 01:13:15
+#sha1: 45ffe7
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1555,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+1555,design,logged,
+1555,Experiment,started
+1582,Stimulus,presented,0
+1590,Stimulus,presented,4
+2083,Stimulus,presented,0
+2083,Stimulus,presented,2
+2090,Stimulus,presented,4
+2090,Stimulus,presented,2
+2107,Stimulus,presented,6
+2591,Stimulus,presented,2
+2591,Stimulus,presented,4
+2608,Stimulus,presented,6
+2608,Stimulus,presented,0
+2623,Stimulus,presented,4
+3108,Stimulus,presented,0
+3108,Stimulus,presented,2
+3123,Stimulus,presented,4
+3123,Stimulus,presented,2
+3141,Stimulus,presented,6
+3623,Stimulus,presented,2
+3623,Stimulus,presented,4
+3641,Stimulus,presented,6
+3642,Stimulus,presented,0
+3657,Stimulus,presented,4
+4141,Stimulus,presented,0
+4141,Stimulus,presented,2
+4156,Stimulus,presented,4
+4156,Stimulus,presented,2
+4173,Stimulus,presented,6
+4656,Stimulus,presented,2
+4657,Stimulus,presented,4
+4674,Stimulus,presented,6
+4675,Stimulus,presented,0
+4689,Stimulus,presented,4
+5175,Stimulus,presented,0
+5175,Stimulus,presented,2
+5189,Stimulus,presented,4
+5190,Stimulus,presented,2
+5208,Stimulus,presented,6
+5689,Stimulus,presented,2
+5689,Stimulus,presented,4
+5707,Stimulus,presented,6
+5708,Stimulus,presented,0
+5724,Stimulus,presented,4
+6208,Stimulus,presented,0
+6208,Stimulus,presented,2
+6224,Stimulus,presented,4
+6225,Stimulus,presented,2
+6241,Stimulus,presented,6
+6724,Stimulus,presented,2
+6725,Stimulus,presented,4
+6741,Stimulus,presented,6
+6741,Stimulus,presented,0
+6758,Stimulus,presented,4
+7241,Stimulus,presented,0
+7242,Stimulus,presented,2
+7257,Stimulus,presented,4
+7258,Stimulus,presented,2
+7273,Stimulus,presented,6
+7758,Stimulus,presented,2
+7758,Stimulus,presented,4
+7773,Stimulus,presented,6
+7773,Keyboard,received,32,check
+43159,Keyboard,received,32,wait
+43159,Experiment,ended

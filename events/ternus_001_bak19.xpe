@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Tue Oct 07 2025 00:46:28
+#sha1: 5ab0ba
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1256,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+1257,design,logged,
+1257,Experiment,started
+1258,stderr,received,'Traceback (most recent call last):'
+1259,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\ternus.py", line 69, in <module>\n    run_trial()\n    ~~~~~~~~~^^'
+1259,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\ternus.py", line 38, in run_trial\n    c = [make_circle(position=(-300, 0)), make_circle(position=(0, 0)), make_circle(position=(200, 0)), make_circle(position=(350, 0))]\n         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^'
+1259,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\ternus.py", line 48, in make_circle\n    circle = stimuli.Circle(radius=radius, colour = "white", position=pos, anti_aliasing=10)\n                                   ^^^^^^'
+1260,stderr,received,"NameError: name 'radius' is not defined"
