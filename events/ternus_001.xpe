@@ -1,27 +1,75 @@
 #Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
-#date: Tue Oct 07 2025 01:29:02
-#sha1: 0e1074
+#date: Wed Oct 08 2025 17:03:11
+#sha1: a096cf
 #modules: 
 #display: size=(800, 600), window_mode=True, opengl=2
 #os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
 Time,Type,Event,Value,Detail,Detail2
-5988,design,log,
+9943,design,log,
 #design: #exp: Ternus
 #design: block_cnt,block_id,trial_cnt,trial_id
-5988,design,logged,
-5988,Experiment,started
-6014,Stimulus,presented,0
-6014,Stimulus,presented,2
-6025,Stimulus,presented,4
-6513,Stimulus,presented,0
-6513,Stimulus,presented,2
-6523,Stimulus,presented,4
-6691,Stimulus,presented,2
-6691,Stimulus,presented,4
-6708,Stimulus,presented,6
-7191,Stimulus,presented,2
-7191,Stimulus,presented,4
-7207,Stimulus,presented,6
-7374,Keyboard,received,32,check
-8216,Keyboard,received,32,wait
-8216,Experiment,ended
+9943,design,logged,
+9943,Experiment,started
+9976,Stimulus,presented,0
+9977,Stimulus,presented,2
+9997,Stimulus,presented,4
+10477,Stimulus,presented,0
+10477,Stimulus,presented,2
+10482,Stimulus,presented,4
+10649,Stimulus,presented,2
+10650,Stimulus,presented,4
+10663,Stimulus,presented,6
+11150,Stimulus,presented,2
+11150,Stimulus,presented,4
+11167,Stimulus,presented,6
+11333,Stimulus,presented,0
+11333,Stimulus,presented,2
+11350,Stimulus,presented,4
+11834,Stimulus,presented,0
+11834,Stimulus,presented,2
+11849,Stimulus,presented,4
+12017,Stimulus,presented,2
+12017,Stimulus,presented,4
+12032,Stimulus,presented,6
+12516,Stimulus,presented,2
+12517,Stimulus,presented,4
+12532,Stimulus,presented,6
+12699,Stimulus,presented,0
+12699,Stimulus,presented,2
+12715,Stimulus,presented,4
+13199,Stimulus,presented,0
+13199,Stimulus,presented,2
+13215,Stimulus,presented,4
+13382,Stimulus,presented,2
+13382,Stimulus,presented,4
+13398,Stimulus,presented,6
+13883,Stimulus,presented,2
+13883,Stimulus,presented,4
+13901,Stimulus,presented,6
+14067,Stimulus,presented,0
+14067,Stimulus,presented,2
+14083,Stimulus,presented,4
+14567,Stimulus,presented,0
+14568,Stimulus,presented,2
+14582,Stimulus,presented,4
+14749,Stimulus,presented,2
+14749,Stimulus,presented,4
+14765,Stimulus,presented,6
+15249,Stimulus,presented,2
+15249,Stimulus,presented,4
+15265,Stimulus,presented,6
+15432,Stimulus,presented,0
+15432,Stimulus,presented,2
+15449,Stimulus,presented,4
+15932,Stimulus,presented,0
+15932,Stimulus,presented,2
+15950,Stimulus,presented,4
+16115,Stimulus,presented,2
+16115,Stimulus,presented,4
+16134,Stimulus,presented,6
+16615,Stimulus,presented,2
+16615,Stimulus,presented,4
+16634,Stimulus,presented,6
+16799,Keyboard,received,32,check
+17758,Keyboard,received,32,wait
+17758,Experiment,ended

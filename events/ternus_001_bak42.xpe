@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Wed Oct 08 2025 17:02:35
+#sha1: a096cf
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='Shrimp', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+2279,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+2279,design,logged,
+2279,Experiment,started
+2314,stderr,received,'Traceback (most recent call last):'
+2315,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\ternus.py", line 56, in <module>\n    run_trial(True, ISI=150)\n    ~~~~~~~~~^^^^^^^^^^^^^^^'
+2315,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\ternus.py", line 27, in run_trial\n    present_for(exp, c1, t=500)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^'
+2316,stderr,received,'  File "c:\\Users\\Claire\\progcog\\Assignments\\Week-4\\Exercises\\utils.py", line 28, in present_for\n    dt = timed_draw(stims)'
+2316,stderr,received,"TypeError: timed_draw() missing 1 required positional argument: 'stims'"
