@@ -1,12 +1,12 @@
 from expyriment import design, control, stimuli
-from expyriment.misc.constants import C_WHITE, C_BLACK, K_f, K_g, K_h, K_j
+from expyriment.misc.constants import C_WHITE, C_BLACK, K_r, K_b, K_g, K_o
 import random
 import itertools 
 
 """ Constants """
 
 COLORS = ["red", "blue", "green", "orange"]
-COLOR_KEYS = {"red": K_f, "blue": K_g, "green": K_h, "orange": K_j}
+COLOR_KEYS = {"red": K_r, "blue": K_b, "green": K_g, "orange": K_o}
 KEY_NAMES = {"red": "F", "blue": "G", "green": "H", "orange": "J"}
 
 
@@ -16,10 +16,10 @@ N_TRIALS_IN_BLOCK = 16
 INSTR_START = """
 In this task, you have to indicate the colour of each word.
 Press:
-  F = RED
-  G = BLUE
-  H = GREEN
-  J = ORANGE\n
+  R = RED
+  B = BLUE
+  G = GREEN
+  O = ORANGE\n
 Press SPACE to continue.
 """
 INSTR_MID = """End of block\nTake a break then press SPACE to move on to the next one."""
