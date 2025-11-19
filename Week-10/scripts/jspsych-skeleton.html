@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="https://unpkg.com/jspsych@8.0.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script>
+    <link href="https://unpkg.com/jspsych@8.0.2/css/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+  <script type="text/javascript">
+    const NUMBER_OF_TRIALS_PER_KEY = 12;
+    const KEYS = ['F', 'J'];
+    const DURATION = 50 // ms;
+
+
+    const jsPsych = initJsPsych({
+      on_finish: function(){
+        jsPsych.data.get().localSave("csv", "FJtrial_jspsych_results.csv");
+      }
+    });
+
+    const helloTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `
+        <p>Hello!</p>
+        <p>You will be taking part in a toy experiment.
+          You will see one of two letters displayed on the screen (${KEYS[0]} or ${KEYS[1]}).</p>
+        <p> Your role will be to press the key corresponding to the letter.
+          <b>Please answer as fast as you can!</b></p>
+        <p>Press any key to continue.</p>
+        `
+    };
+
+    const restrictedKeyTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: 'Press F or J!',
+      choices: ['F', 'J']
+    };
+
+
+    function FJtrial(keys, trialsPerKey){
+      let possibleTrials = [];
+
+      for (let k = 0; k < keys.length; k += 1){
+        possibleTrials.push({
+          type: jsPsychHtmlKeyboardResponse,
+          stimulus: keys[k],
+          choices: keys
+        });
+      }
+
+      return jsPsych.randomization.repeat(possibleTrials, trialsPerKey);
+    }
+
+    const blankTrial = {
+      type:jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      trial_duration: DURATION,
+      choices: [],
+    };
+
+    const FixationCross = {
+      type:jsPsychHtmlKeyboardResponse,
+      stimulus: "+",
+      trial_duration: DURATION,
+      choices: [],
+    };
+
+  </script>
+  <script type="text/javascript">
+    
+    let trials = FJtrial(KEYS, NUMBER_OF_TRIALS_PER_KEY);
+
+    let timeline = [helloTrial];
+
+    for (let trial of trials){
+      timeline.push(FJtrial, restrictedKeyTrial);
+
+      timeline.push(blankTrial);
+    }
+    
+    console.log(timeline.length)
+
+    jsPsych.run(timeline);
+  </script>
+</html>
+
