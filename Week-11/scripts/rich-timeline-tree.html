@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="https://unpkg.com/jspsych@8.2.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.1.0"></script>
+    <link href="https://unpkg.com/jspsych@8.2.2/css/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+
+  <script type="text/javascript">
+    const NUMBER_OF_TRIALS_PER_KEY = 10;
+    const KEYS = ['F', 'J'];
+
+    function createTimelineVariables(keys){
+      let possibleTrials = [];
+
+      for (let k = 0; k < keys.length; k += 1){
+        possibleTrials.push({key: keys[k]});
+        possibleTrials.push({key: keys[k].toLowerCase()});
+    }
+
+      return possibleTrials;
+    }
+    
+    const select_key = {
+      timeline: [
+        { 
+          type: jsPsychHtmlKeyboardResponse,
+          stimulus: jsPsych.timelineVariable('key'),
+          choices: keys,
+          post_trial_gap: 250
+        }
+
+
+      ],
+
+      timeline_variable: createTimelineVariables(KEYS)
+
+    }
+  </script>
+
+  <script type="text/javascript">
+    const jsPsych = initJsPsych({
+      on_finish: function(){
+        jsPsych.data.get().localSave("csv", "demo_jspsych_results.csv");
+        document.body.innerHTML = "Thank you!";
+      }
+    });
+
+    const helloTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `
+        <p>Hello!</p>
+        <p>You will be taking part in a toy experiment.
+          You will see one of two letters displayed on the screen (${KEYS[0]} or ${KEYS[1]}).</p>
+        <p> Your role will be to press the key corresponding to the letter.
+          <b>Please answer as fast as you can!</b></p>
+        <p>Press any key to continue.</p>
+        `
+    };
+
+    let timeline = [helloTrial, select_key];
+
+    console.log(timeline.length)
+
+    jsPsych.run(timeline);
+  </script>
+</html>
