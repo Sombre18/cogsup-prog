@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="https://unpkg.com/jspsych@8.0.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script>
+    <link href="https://unpkg.com/jspsych@8.0.2/css/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+  <script type="text/javascript">
+    const stroopTrials = [
+      {word: "RED", color: "red"},
+      {word: "BLUE", color: "blue"},
+      {word: "GREEN", color: "green"},
+      {word: "RED", color: "blue"},   
+      {word: "BLUE", color: "green"}, 
+    ];
+
+
+    const jsPsych = initJsPsych({
+      on_finish: function(){
+        jsPsych.data.get().localSave("csv", "stroop_results.csv");
+      }
+    });
+
+    
+    const helloTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `
+        <p>You will be taking part in a stroop task.</p>
+        <p>Respond to the color of the word as fast as you can.</p>
+        <p>Press any key to begin.</p>
+      `
+    };
+
+    
+    const fixationTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "<p style='font-size:40px;'>+</p>",
+      choices: [],
+      trial_duration: 500
+    };
+
+    
+    const blankTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      choices: [],
+      trial_duration: 100
+    };
+
+    
+    const stroopTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: function(){
+        let word = jsPsych.timelineVariable('word');
+        let color = jsPsych.timelineVariable('color');
+        return `<p style='color: ${color}; font-size:40px;'>${word}</p>`;
+      },
+      choices: ['f','j'],  
+    };
+
+    
+    
+    let timeline = [helloTrial];
+
+    for (let t of stroopTrials){
+      timeline.push(fixationTrial);
+      timeline.push({
+        timeline: [stroopTrial],
+        timelineVariables: [t]
+      });
+      timeline.push(blankTrial);
+    }
+
+    
+    jsPsych.run(timeline);
+  </script>
+</html>
