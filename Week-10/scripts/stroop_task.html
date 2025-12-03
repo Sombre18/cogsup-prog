@@ -8,7 +8,7 @@
   </head>
   <body></body>
   <script type="text/javascript">
-    const stroopTrials = [
+    const colours = [
       {word: "RED", color: "red"},
       {word: "BLUE", color: "blue"},
       {word: "GREEN", color: "green"},
@@ -34,9 +34,9 @@
     };
 
     
-    const fixationTrial = {
+    const fixationCross = {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: "<p style='font-size:40px;'>+</p>",
+      stimulus: "+",
       choices: [],
       trial_duration: 500
     };
@@ -53,6 +53,17 @@
     const stroopTrial = {
       type: jsPsychHtmlKeyboardResponse,
       stimulus: function(){
+        
+        for (let t of stroopTrial){
+          timeline.push(fixationCross);
+          timeline.push({
+            timeline: [stroopTrial],
+            timelineVariables: [t]
+          });
+      
+          timeline.push(blankTrial);
+        }
+
         let word = jsPsych.timelineVariable('word');
         let color = jsPsych.timelineVariable('color');
         return `<p style='color: ${color}; font-size:40px;'>${word}</p>`;
@@ -60,18 +71,10 @@
       choices: ['f','j'],  
     };
 
-    
-    
-    let timeline = [helloTrial];
 
-    for (let t of stroopTrials){
-      timeline.push(fixationTrial);
-      timeline.push({
-        timeline: [stroopTrial],
-        timelineVariables: [t]
-      });
-      timeline.push(blankTrial);
-    }
+    
+    let timeline = [helloTrial, stroopTrial];
+
 
     
     jsPsych.run(timeline);
