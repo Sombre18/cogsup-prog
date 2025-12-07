@@ -82,3 +82,4 @@ lines(v6, v7) # Use 'lines' to force R to draw on the already-existing plot
 
 v8 <- seq(1, 10, by=0.01)
 plot(v8, exp(v8), type='l')
+
